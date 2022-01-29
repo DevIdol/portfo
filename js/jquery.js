@@ -4,6 +4,6 @@ $(window).on('load', function () {
 })
 
 $('#mobile-nav #navigation ul li a').on('click', function () {
-  $('#mobile-nav #navigation ul li a').removeClass('active')
+  $(' #mobile-nav #navigation ul li a').removeClass('active')
   $(this).addClass('active')
 })
