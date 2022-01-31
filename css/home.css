@@ -29,7 +29,10 @@
   left: 0;
   z-index: -1;
 }
-
+/* 
+=====================================
+        Home Content
+=====================================*/
 #home-content {
   width: 100%;
   height: 100%;
@@ -43,7 +46,7 @@
 
 #home-heading h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 56px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
@@ -57,34 +60,80 @@
 
 #home-text h2 {
   color: #fff;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   margin: 8px 0 30px 0;
 }
 
-#home-text h2 span{
-    color: #f4c613;
-    font-weight: 600;  
+#home-text h2 span {
+  color: #f4c613;
+  font-weight: 600;
 }
-
 
 /* =========================================
                 Arrow Down
 ============================================ */
 
 #arrow-down {
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    color: #fff;
-    font-size: 32px;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    margin-left: -16px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-left: -16px;
 }
 
 #arrow-down:hover,
 #arrow-down:focus {
-    color: #f4c613;
+  color: #f4c613;
+}
+
+/* 
+=====================================
+        Media Quary
+=====================================*/
+
+/* ------ 980px ------- */
+@media screen and (max-width: 980px) {
+  #home-heading h1 {
+    font-size: 46px;
+  }
+
+  #home-text h2 {
+    font-size: 28px;
+  }
+}
+
+/* ------ 680px ------- */
+@media screen and (max-width: 680px) {
+  #home-heading h1 {
+    font-size: 28px;
+  }
+  #home-text h2 {
+    font-size: 24px;
+  }
+}
+
+/* ------ 480px ------- */
+@media screen and (max-width: 480px) {
+  #home-heading h1 {
+    font-size: 32px;
+  }
+  #home-text h2 {
+    font-size: 22px;
+  }
+}
+
+/* ------ 380px ------- */
+@media screen and (max-width: 380px) {
+  #home-heading h1 {
+    font-size: 30px;
+  }
+
+  #home-text h2 {
+    font-size: 20px;
+  }
 }

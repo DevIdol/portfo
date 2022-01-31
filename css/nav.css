@@ -5,7 +5,7 @@
  */
 
 #main-nav {
-  background-color: silver;
+  background-color: rgba(255, 255, 255, 0.6);
   position: fixed;
   height: 80px;
   width: 100%;
@@ -55,6 +55,7 @@
   transition: all 0.4s;
 }
 .nav-list ul li a:hover {
+  color: #490f0f;
   font-size: 16px;
   font-weight: 600;
   transition: all 0.4s;
@@ -84,7 +85,7 @@
 .sign-in a,
 .sign-out a {
   border: 1px solid #490f0f;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 500;
@@ -133,9 +134,10 @@
   cursor: pointer;
 }
 #mobile-nav ul li {
-  line-height: 40px;
+  line-height: 26px;
 }
 #mobile-nav ul li a {
+  color: #000;
   font-size: 15px;
   padding-left: 40%;
   font-weight: 500;
@@ -144,7 +146,7 @@
 #mobile-nav ul li a:hover {
   font-size: 16px;
   font-weight: 600;
-  color: #0d6efd;
+  color: #490f0f;
   transition: all 0.4s;
 }
 
