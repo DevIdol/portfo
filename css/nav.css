@@ -5,7 +5,7 @@
  */
 
 #main-nav {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
   height: 80px;
   width: 100%;
@@ -85,8 +85,8 @@
 .sign-in a,
 .sign-out a {
   border: 1px solid #490f0f;
+  padding: 4px 10px;
   border-radius: 8px;
-  padding: 4px 12px;
   font-size: 15px;
   font-weight: 500;
   color: black;
@@ -101,6 +101,11 @@
   color: white;
   transition: all 0.4s;
 }
+.sign-in .active, .sign-out .active{
+  background-color: #490f0f;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 /* 
 ============================
@@ -110,7 +115,7 @@
 
 #mobile-nav {
   display: none;
-  background-color: gray !important;
+  background-color: rgba(255, 255, 255, 0.5);
   height: 80px;
   line-height: 64px;
   z-index: 1;
@@ -123,10 +128,6 @@
   font-size: 20px;
   color: #490f0f;
   cursor: pointer;
-}
-
-.user-mail {
-  font-size: 14px;
 }
 .menu-close {
   font-size: 20px;

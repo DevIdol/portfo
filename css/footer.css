@@ -3,7 +3,7 @@
 .back-top {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
-  bottom: 2% !important;
+  bottom: 12% !important;
   right: 0%;
   width: 40px;
   height: 40px;
@@ -15,7 +15,7 @@
   color: #490f0f;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.4s;
+  transition: all 1s;
 }
 .back-top:hover {
   color: #490f0f !important;
@@ -26,4 +26,5 @@
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+  transition: all 1s;
 }

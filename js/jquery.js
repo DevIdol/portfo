@@ -7,10 +7,10 @@ $(window).on('load', function () {
   $('#arrow-down i').addClass('animation fadeInDown infinite')
 })
 
-$('#mobile-nav #navigation ul li a').on('click', function () {
-  $(' #mobile-nav #navigation ul li a').removeClass('active')
-  $(this).addClass('active')
-})
+// $('.username li a').on('click', function () {
+//   $('.username li a').removeClass('active')
+//   $(this).addClass('active')
+// })
 
 $(document).ready(function () {
   $(window).scroll(function () {

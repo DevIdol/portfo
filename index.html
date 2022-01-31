@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/animation.css" />
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <!-- ======= Loading ======== -->
@@ -95,9 +95,34 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title user-mail" id="offcanvasNavbarLabel">
-                devidol.mm@gamil.com
-              </h5>
+              <div class="btn-group offcanvas-title" id="offcanvasNavbarLabel">
+                <button
+                  class="btn btn-light btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  username
+                </button>
+                <ul class="dropdown-menu username">
+                  <li>
+                    <a class="dropdown-item" href="">
+                      <i class="fas fa-user-circle"></i>
+                      Profile
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="">
+                      <i class="fas fa-sign-out-alt"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
               <span
                 class="fas fa-times text-reset menu-close"
                 data-bs-dismiss="offcanvas"
@@ -122,39 +147,6 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href=""
-                    id="offcanvasNavbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    username
-                  </a>
-
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="offcanvasNavbarDropdown"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="">
-                        <i class="fas fa-user-circle"></i>
-                        Profile
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">
-                        <i class="fas fa-sign-out-alt"></i>
-                        Logout
-                      </a>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </div>
@@ -227,6 +219,7 @@
         <br />
         <br />
         Section-3
+        <br><br><br><br><br><br><br><br><br><br>
       </a>
     </section>
     <section id="resume">
@@ -241,6 +234,7 @@
       <br />
       <br />
       Section-4
+      <br><br><br><br><br><br><br><br><br><br>
     </section>
     <section id="contact">
       <br />
@@ -254,17 +248,18 @@
       <br />
       <br />
       Section-4
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
 
-        <!-- ======== Footer =========== -->
-        <section>
-          <a href="#" class="back-top">
-            <i class="fas fa-chevron-up"></i>
-          </a>
-        </section>
-        <footer>
-          <h1>This is Footer</h1>
-        </footer>
+    <!-- ======== Footer =========== -->
+    <section>
+      <a href="#" class="back-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </section>
+    <footer>
+      <h1>This is Footer</h1>
+    </footer>
 
     <!-- ===== Bootstrap JavaScript ==== -->
     <script
