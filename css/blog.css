@@ -13,7 +13,7 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
-  color: #490f0f;
+  color: #8f1f13;
   transition: all 0.4s;
 }
 .blog-section a h6:hover{
@@ -31,7 +31,7 @@
 
 .blog-img {
   height: 220px;
-  padding: 6px 8px 0px 8px;
+  padding: 6px 10px 0px 10px;
 }
 
 .blog-subtitle {
@@ -41,7 +41,7 @@
 }
 
 .blog-divider {
-  background-color: #490f0f;
+  background-color: #8f1f13;
   width: 3px;
   height: 20px;
 }
@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .blog-item {
     width: 100%;
     margin-bottom: 20px;

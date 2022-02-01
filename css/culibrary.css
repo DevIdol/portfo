@@ -1,0 +1,84 @@
+#culibrary {
+  background-color: #f0f0f0;
+  padding-bottom: 10px;
+}
+.cu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 82px 0 18px 0;
+}
+.cu-section h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.cu-underline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+}
+.cu-underline i {
+  padding: 0 6px;
+  color: #c9ab05;
+}
+.cu-underline01 {
+  background-color: #8f1f13;
+  width: 80px;
+  height: 4px;
+}
+
+.cu-img {
+  width: 100%;
+  height: 420px;
+}
+
+.cu-about h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.cu-download {
+  float: right;
+  color: #8f1f13;
+  border: 1px solid #8f1f13;
+  transition: all 0.4s;
+}
+.cu-download:hover {
+  background-color: #8f1f13;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 991px) {
+  .cu-img {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cu-about h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cu-about h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .cu-img {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cu-img {
+    height: 300px;
+  }
+  .cu-about h3 {
+    font-size: 22px;
+  }
+}

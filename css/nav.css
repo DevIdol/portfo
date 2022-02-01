@@ -5,7 +5,7 @@
  */
 
 #main-nav {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   position: fixed;
   height: 80px;
   width: 100%;
@@ -55,7 +55,7 @@
   transition: all 0.4s;
 }
 .nav-list ul li a:hover {
-  color: #490f0f;
+  color: #8f1f13;
   font-size: 16px;
   font-weight: 600;
   transition: all 0.4s;
@@ -63,7 +63,7 @@
 
 .active {
   /* color: #0d6efd !important; */
-  color: #490f0f !important;
+  color: #8f1f13 !important;
   font-weight: 800 !important;
   font-size: 16px !important;
 }
@@ -84,7 +84,7 @@
 }
 .sign-in a,
 .sign-out a {
-  border: 1px solid #490f0f;
+  border: 1px solid #8f1f13;
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 15px;
@@ -95,14 +95,14 @@
 
 .sign-in a:hover,
 .sign-out a:hover {
-  background-color: #490f0f;
+  background-color: #8f1f13;
   font-size: 16px;
   font-weight: 600;
   color: white;
   transition: all 0.4s;
 }
 .sign-in .active, .sign-out .active{
-  background-color: #490f0f;
+  background-color: #8f1f13;
   font-size: 16px;
   font-weight: 600;
 }
@@ -115,23 +115,23 @@
 
 #mobile-nav {
   display: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   height: 80px;
   line-height: 64px;
   z-index: 1;
 }
 
 .mobile-menu {
-  border: 1px solid #490f0f;
+  border: 1px solid #8f1f13;
   border-radius: 4px;
   padding: 6px 12px;
   font-size: 20px;
-  color: #490f0f;
+  color: #8f1f13;
   cursor: pointer;
 }
 .menu-close {
   font-size: 20px;
-  color: #490f0f !important;
+  color: #8f1f13 !important;
   cursor: pointer;
 }
 #mobile-nav ul li {
@@ -147,7 +147,7 @@
 #mobile-nav ul li a:hover {
   font-size: 16px;
   font-weight: 600;
-  color: #490f0f;
+  color: #8f1f13;
   transition: all 0.4s;
 }
 

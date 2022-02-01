@@ -22,7 +22,7 @@ $(document).ready(function () {
       })
     } else {
       $('#main-nav, #mobile-nav').css({
-        'background-color': 'rgba(255, 255, 255, 0.6)',
+        'background-color': 'rgba(255, 255, 255, 0.4)',
         transition: 'ease-in 0.8s;',
       })
     }
