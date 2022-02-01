@@ -87,6 +87,7 @@
   }
   .resume-type h5 {
     font-size: 14px;
+    margin-right: 1px;
   }
   .resume-name h5 {
     font-size: 14px;
@@ -95,11 +96,5 @@
 @media screen and (max-width: 364px) {
   .resume-img {
     height: 170px;
-  }
-  .resume-type h5 {
-    font-size: 13px;
-  }
-  .resume-name h5 {
-    font-size: 13px;
   }
 }

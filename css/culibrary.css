@@ -43,6 +43,10 @@
   font-size: 28px;
   font-weight: 500;
 }
+.cu-about p{
+  font-weight: 500;
+  text-indent: 30px;
+}
 
 .cu-download {
   float: right;
