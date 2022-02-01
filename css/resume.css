@@ -1,0 +1,105 @@
+#resume {
+  padding-bottom: 10px;
+}
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 82px 0 18px 0;
+}
+.resume-section h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.resume-underline {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: -10px;
+}
+.resume-underline01 {
+  width: 60px;
+  height: 4px;
+  background-color: #8f1f13;
+}
+.resume-underline i {
+  color: #b39802;
+  font-size: 18px;
+}
+
+.resume-img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 260px;
+  text-align: center;
+}
+.resume-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.resume-type h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.resume-name h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.view-all-resume {
+  float: right;
+  color: #8f1f13;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: all 0.4s;
+}
+
+.view-all-resume:hover {
+  color: #8f1f13;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 500px) {
+  .resume-img {
+    height: 220px;
+  }
+  .resume-type h5 {
+    font-size: 16px;
+  }
+  .resume-name h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .resume-img {
+    height: 200px;
+  }
+  .resume-type h5 {
+    font-size: 14px;
+  }
+  .resume-name h5 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 364px) {
+  .resume-img {
+    height: 170px;
+  }
+  .resume-type h5 {
+    font-size: 13px;
+  }
+  .resume-name h5 {
+    font-size: 13px;
+  }
+}
