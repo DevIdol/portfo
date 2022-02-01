@@ -1,0 +1,40 @@
+#contact {
+  background-color: #f0f0f0;
+  padding-bottom: 60px;
+}
+.contact-section {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 82px 0 18px 0;
+}
+
+.input,
+textarea {
+  border: 1px solid silver;
+}
+.input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  border: 1px solid silver !important;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px !important;
+}
+.send-mail-btn {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid #8f1f13;
+  color: #8f1f13;
+  transition: all 0.6s;
+}
+.mail-btn{
+    padding-top: 20px;
+}
+.send-mail-btn:hover{
+    background-color: #8f1f13;
+    color: #fff;
+    transition: all 0.6s;
+}

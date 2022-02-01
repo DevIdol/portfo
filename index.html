@@ -505,8 +505,64 @@
       </div>
     </section>
 
+    <!-- ======== Cantact Section =========== -->
     <section id="contact">
-      
+      <div class="contact-section">
+        <h2>Contact</h2>
+        <div class="cu-underline">
+          <div class="cu-underline01"></div>
+          <i class="fas fa-star"></i>
+          <div class="cu-underline01"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form action="">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control input"
+                  id="floatingInput"
+                  placeholder="Enter Your Name"
+                />
+                <label for="floatingInput inputlabel">Enter Your Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control input"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput inputlabel">
+                  Enter Email address
+                </label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control textarea"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem;"
+                  data-sb-validations="required"
+                ></textarea>
+                <label for="message">Message</label>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
+              </div>
+              <div class="text-center mail-btn">
+                <button class="btn send-mail-btn">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ======== Footer =========== -->
