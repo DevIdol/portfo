@@ -3,7 +3,7 @@
 .back-top {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
-  bottom: 12% !important;
+  bottom: 18% !important;
   right: 0%;
   width: 40px;
   height: 40px;
@@ -27,4 +27,80 @@
   pointer-events: auto;
   opacity: 1;
   transition: all 1s;
+}
+
+/* =============
+      Footer 
+================
+*/
+footer {
+  background-color: #8f1f13;
+  height: 120px;
+}
+footer h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+}
+footer h4 span {
+  font-weight: 400;
+}
+footer h4 a {
+  color: #fff;
+  font-weight: 400;
+}
+footer h4 a:hover {
+  color: #fff;
+  font-weight: 500;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 30px 0;
+}
+
+.social-media a i {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.footer-facebook {
+  padding: 8px 11px 8px 11px;
+  border-radius: 50%;
+  background-color: #3b5998;
+}
+.footer-twitter {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #00acee;
+  margin: 0 20px;
+}
+.instagram {
+  width: 38px;
+  height: 38px;
+  margin-top: -6px;
+}
+
+@media screen and (max-width: 800px) {
+  footer h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 580px) {
+  footer h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer h4 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  footer h4 {
+    font-size: 12px;
+  }
 }

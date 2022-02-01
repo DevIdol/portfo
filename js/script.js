@@ -39,3 +39,8 @@ window.addEventListener("scroll", ()=>{
         backTop.classList.remove("back-active");
     }
 })
+
+
+var date=new Date();
+		var getyear= date.getFullYear();
+		document.getElementById('currentyear').innerHTML=getyear;

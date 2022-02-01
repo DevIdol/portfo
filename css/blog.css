@@ -78,7 +78,7 @@
 .twitter,
 .telegram {
   font-size: 14px;
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 .twitter {
   padding: 0 6px;
@@ -87,7 +87,7 @@
 .twitter:hover,
 .telegram:hover {
   font-size: 15px;
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 
 /*
