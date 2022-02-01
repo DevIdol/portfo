@@ -1,0 +1,136 @@
+.blog-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 82px 0 18px 0;
+}
+.blog-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.blog-section a h6 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #490f0f;
+  transition: all 0.4s;
+}
+.blog-section a h6:hover{
+  font-weight: 700;
+  transition: all 0.4s;
+}
+
+.blog-item {
+  margin: 0 4% 6% 4%;
+  border: 1px solid silver;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.blog-img {
+  height: 220px;
+  padding: 6px 8px 0px 8px;
+}
+
+.blog-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-divider {
+  background-color: #490f0f;
+  width: 3px;
+  height: 20px;
+}
+.blog-type {
+  display: flex;
+  align-items: center;
+}
+
+.blog-type-name h6 {
+  padding: 8px 0 0 4px;
+}
+
+/* ======== Blog Footer ========= */
+.blog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author-img {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+.author-name h6 {
+  font-size: 12px;
+  padding: 10px 0 0 4px;
+}
+.facebook,
+.twitter,
+.telegram {
+  font-size: 14px;
+  transition: all 0.4s;
+}
+.twitter {
+  padding: 0 6px;
+}
+.facebook:hover,
+.twitter:hover,
+.telegram:hover {
+  font-size: 15px;
+  transition: all 0.4s;
+}
+
+/*
+======================
+      Media Quary
+=====================
+ */
+
+@media screen and (max-width: 1200px) {
+  .blog-item {
+    margin: 0%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .blog-item {
+    margin: 0%;
+    width: 104%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blog-section h2 {
+    font-size: 28px;
+  }
+  .blog-section a h6 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .blog-section h2 {
+    font-size: 26px;
+  }
+  .blog-section a h6 {
+    font-size: 10px;
+  }
+}
