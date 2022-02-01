@@ -42,13 +42,11 @@
 }
 .resume-name p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .resume-name p i {
-  font-size: 20;
   color: #8f1f13;
   padding-right: 10px;
-  text-align: center;
 }
 .view-all-resume {
   float: right;
@@ -65,14 +63,15 @@
   font-weight: 600;
   transition: all 0.8s;
 }
+@media screen and (max-width: 992px) {
+  .resume-name p {
+    font-size: 16px;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .resume-img {
     height: 240px;
-  }
-  .resume-name p {
-    font-size: 16px;
-    font-weight: 400;
   }
 }
 
