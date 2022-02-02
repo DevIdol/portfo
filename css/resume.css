@@ -56,6 +56,98 @@
 ========================================
       Resume Right Side
 ======================================== */
+.tab-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.tab-menu ul li {
+  padding: 1rem;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 200ms ease;
+  font-size: 1rem;
+}
+.tab-menu ul li:hover {
+  background: rgba(221, 221, 221, 0.8);
+}
+.tab-menu ul li:nth-child(even) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.tab-menu ul li:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.tab-menu ul li:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.tab-menu ul .active-menu {
+  background: #444;
+  color: #ddd;
+  cursor: default;
+}
+.tab-menu ul .active-menu:hover {
+  background: #444;
+  color: #ddd;
+}
+
+@media (min-width: 405px) {
+  .tab-menu ul li {
+    padding: 1rem 2rem;
+  }
+}
+.tab-content {
+padding-bottom: 0;
+}
+
+.slide {
+  transform: translateX(100vw);
+}
+
+.active-menu {
+  background: #444;
+}
+
+.active-tab {
+  transform: translateX(0);
+  -webkit-animation: moveLeft 600ms ease;
+          animation: moveLeft 600ms ease;
+}
+
+@-webkit-keyframes moveLeft {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveLeft {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 
 

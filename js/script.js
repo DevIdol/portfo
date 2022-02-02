@@ -29,18 +29,18 @@ function navHighlighter() {
   })
 }
 
+const backTop = document.querySelector('.back-top')
 
-const backTop = document.querySelector(".back-top");
-
-window.addEventListener("scroll", ()=>{
-    if(window.pageYOffset > 200){
-        backTop.classList.add("back-active");
-    }else{
-        backTop.classList.remove("back-active");
-    }
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 200) {
+    backTop.classList.add('back-active')
+  } else {
+    backTop.classList.remove('back-active')
+  }
 })
 
 
-var date=new Date();
-		var getyear= date.getFullYear();
-		document.getElementById('currentyear').innerHTML=getyear;
+
+var date = new Date()
+var getyear = date.getFullYear()
+document.getElementById('currentyear').innerHTML = getyear
