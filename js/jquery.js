@@ -1,16 +1,16 @@
 $(window).on('load', function () {
-  $('#loading').fadeOut(2000)
-  $('#status').delay(2200).fadeOut(2000)
+  $('#loading').fadeOut(1000)
+  $('#status').delay(1200).fadeOut(1000)
   $('#home-heading-1').addClass('animated fadeInLeft')
   $('#home-heading-2').addClass('animated fadeInRight')
   $('#home-text').addClass('animated zoomIn')
   $('#arrow-down i').addClass('animation fadeInDown infinite')
 })
 
-// $('.username li a').on('click', function () {
-//   $('.username li a').removeClass('active')
-//   $(this).addClass('active')
-// })
+$('.username li').on('click', function () {
+  $('.username li').removeClass('active')
+  $(this).addClass('active')
+})
 
 $(document).ready(function () {
   $(window).scroll(function () {

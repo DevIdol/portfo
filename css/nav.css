@@ -130,7 +130,7 @@
   cursor: pointer;
 }
 .menu-close {
-  font-size: 20px;
+  font-size: 30px;
   color: #8f1f13 !important;
   cursor: pointer;
 }
@@ -139,7 +139,7 @@
 }
 #mobile-nav ul li a {
   color: #000;
-  font-size: 15px;
+  font-size: 18px;
   padding-left: 40%;
   font-weight: 500;
   transition: all 0.4s;
