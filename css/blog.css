@@ -39,7 +39,15 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.blog-title h5{
+  font-size: 22px;
+  font-weight: 500;
+  transition:ease-in 0.6s;
+}
+.blog-title h5:hover{
+  font-weight: 600;
+  transition: ease-in-out 0.4s;
+}
 .blog-divider {
   background-color: #8f1f13;
   width: 3px;
