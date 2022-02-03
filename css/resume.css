@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 82px 0 18px 0;
+  padding: 82px 0 60px 0;
 }
 .resume-section h2 {
   font-size: 30px;
@@ -35,162 +35,222 @@
 ========================================
       Resume Left Side
 ======================================== */
-
-
-.resume-img{
+.resume-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.resume-img {
   height: 220px;
 }
-.resume-left h2{
+.resume-left h2 {
+  padding-top: 14px;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
 }
-.resume-left h3{
+.resume-left h3 {
   font-size: 14px;
   text-align: center;
+  padding-bottom: 20px;
 }
-
-
 
 /* 
 ========================================
       Resume Right Side
 ======================================== */
-.tab-menu ul {
+
+.tab-wrapper {
+  padding-bottom: 10px;
+}
+.tab-link {
   list-style: none;
-  padding: 0;
-  display: flex;
-}
-.tab-menu ul li {
-  padding: 1rem;
-  background: #ddd;
+  display: inline-block;
+  padding: 0 6px;
+  margin: 0 14px;
   cursor: pointer;
-  transition: all 200ms ease;
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: 500;
 }
-.tab-menu ul li:hover {
-  background: rgba(221, 221, 221, 0.8);
-}
-.tab-menu ul li:nth-child(even) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.tab-menu ul li:first-child {
-  border-radius: 3px 0 0 3px;
-}
-.tab-menu ul li:last-child {
-  border-radius: 0 3px 3px 0;
-}
-.tab-menu ul .active-menu {
-  background: #444;
-  color: #ddd;
-  cursor: default;
-}
-.tab-menu ul .active-menu:hover {
-  background: #444;
-  color: #ddd;
+.tab-link.active-resume {
+  color: #8f1f13;
+  font-weight: 700;
+  border-bottom: 3px solid #8f1f13;
+  transition: ease-in 0.2s;
 }
 
-@media (min-width: 405px) {
-  .tab-menu ul li {
-    padding: 1rem 2rem;
-  }
+.tab-link:hover {
+  color: #8f1f13;
+  font-weight: 600;
+  border-bottom: 3px solid #8f1f13;
+  transition: ease-out 0.2s;
+}
+.content-wrapper {
+  padding-left: 6%;
 }
 .tab-content {
-padding-bottom: 0;
+  display: none;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeIn 0.5s ease 1 forwards;
+}
+.tab-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
 }
 
-.slide {
-  transform: translateX(100vw);
+.tab-content p i {
+  width: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #8f1f13;
+}
+.tab-content p a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
 }
 
-.active-menu {
-  background: #444;
+.tab-content.active-resume {
+  display: block;
 }
 
-.active-tab {
-  transform: translateX(0);
-  -webkit-animation: moveLeft 600ms ease;
-          animation: moveLeft 600ms ease;
-}
-
-@-webkit-keyframes moveLeft {
-  0% {
-    transform: translateX(100vw);
-    opacity: 0;
-  }
+@keyframes fadeIn {
   100% {
-    transform: translateX(0);
     opacity: 1;
+    transform: none;
   }
 }
 
-@-webkit-keyframes moveLeft {
-  0% {
-    transform: translateX(100vw);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+/* ======== Technical Skill =========== */
+
+.progress-wrapper {
+  padding: 20px 10px;
+}
+.progress-wrapper h5 {
+  font-size: 18px;
+}
+.progress {
+  background-color: silver;
 }
 
-@keyframes moveLeft {
-  0% {
-    transform: translateX(100vw);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+/* ===== Other Skill ====== */
+.other-skill {
+  padding-top: 4px;
+  padding-left: 1%;
+}
+.other-skill h5 {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+.skill-left {
+  padding-right: 20px;
+}
+.other-skill p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+.other-skill p span {
+  color: #8f1f13;
+  font-size: 10px;
+  padding: 3px;
+  margin-right: 18px;
+  font-weight: 700;
+  border: 1px solid #8f1f13;
+  border-radius: 4px;
+}
+i.flag {
+  font-size: 18px !important;
+  padding-right: 10px;
+}
+.language {
+  padding-right: 40px;
 }
 
-
-
-
-
-
-
+.other-skill p a {
+  font-size: 14px;
+  font-weight: 500;
+}
 
 @media screen and (max-width: 834px) {
-  .resume-img{
+  .resume-img {
     height: 200px;
   }
-  .resume-left h2{
+  .resume-left h2 {
     font-size: 22px;
-
   }
-  .resume-left h3{
+  .resume-left h3 {
     font-size: 12px;
   }
-  
+  .tab-link {
+    padding: 0 6px;
+    margin: 0 12px;
+    font-size: 16px;
+  }
+  .tab-content p {
+    font-size: 16px;
+  }
+
+  .tab-content p i {
+    width: 34px;
+    font-size: 18px;
+  }
+  .tab-content p a {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .resume-left h2{
+  .resume-left h2 {
     font-size: 24px;
-
   }
-  .resume-left h3{
+  .resume-left h3 {
     font-size: 14px;
   }
-  .resume-01{
+  .resume-01 {
     display: none;
+  }
+}
+@media screen and (max-width: 490px) {
+  .skills {
+    flex-wrap: wrap;
+  }
+  .tab-link {
+    padding: 0 4px;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  .tab-content p {
+    font-size: 14px;
+  }
+
+  .tab-content p i {
+    width: 26px;
+    font-size: 14px;
+  }
+  .tab-content p a {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .resume-img{
+  .resume-img {
     height: 180px;
   }
-  .resume-left h2{
+  .resume-left h2 {
     font-size: 22px;
-
   }
-  .resume-left h3{
+  .resume-left h3 {
     font-size: 12px;
   }
-  
+  .tab-link {
+    padding: 0 6px;
+    margin: 0;
+  }
 }
