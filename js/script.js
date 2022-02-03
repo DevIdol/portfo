@@ -16,14 +16,14 @@ function navHighlighter() {
         .querySelector('.navigation a[href*=' + sectionId + ']')
         .classList.add('active')
       document
-        .querySelector('#mobile-nav #navigation a[href*=' + sectionId + ']')
+        .querySelector('#mobile-nav .navigation a[href*=' + sectionId + ']')
         .classList.add('active')
     } else {
       document
         .querySelector('.navigation a[href*=' + sectionId + ']')
         .classList.remove('active')
       document
-        .querySelector('#mobile-nav #navigation a[href*=' + sectionId + ']')
+        .querySelector('#mobile-nav .navigation a[href*=' + sectionId + ']')
         .classList.remove('active')
     }
   })
