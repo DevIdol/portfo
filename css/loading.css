@@ -8,11 +8,12 @@
     z-index: 9999;
 }
 #status{
-    background-image: url('../img/preloader.gif');
+    background-image: url('../img/loading.gif');
     background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    width: 180px;
+    height: 180px;
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
 }
