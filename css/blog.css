@@ -40,7 +40,7 @@
   justify-content: space-between;
 }
 .blog-title h5{
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   transition:ease-in 0.6s;
 }
@@ -60,9 +60,12 @@
 }
 
 .blog-type-name h6 {
+  font-size: 14px;
   padding: 8px 0 0 4px;
 }
-
+.blog-date p{
+  font-size: 12px;
+}
 /* ======== Blog Footer ========= */
 .blog-footer {
   display: flex;

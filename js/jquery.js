@@ -7,8 +7,8 @@ $(window).on('load', function () {
   $('#arrow-down i').addClass('animation fadeInDown infinite')
 })
 
-$('.navigation ul li a, .username li a').on('click', function () {
-  $('.navigation ul li a, .username li a').removeClass('active')
+$('.navigation ul li a, #mobile-nav .navigation ul li a, .username li a').on('click', function () {
+  $('.navigation ul li a, #mobile-nav .navigation ul li a, .username li a').removeClass('active')
   $(this).addClass('active')
 })
 
