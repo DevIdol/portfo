@@ -25,19 +25,18 @@
 
 .blog-view-left {
   margin-right: 35%;
-  padding: 94px 60px;
+  padding: 94px 80px;
 }
 
 .view-blog-img {
   width: 100%;
   height: 300px;
-  padding: 0 40px;
 }
 .blog-view-subtitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 60px;
+  padding: 20px 0px;
 }
 
 .blog-author {
@@ -52,21 +51,21 @@
 }
 .blog-author-name {
   padding: 10px 0 0 10px;
+  font-size: 14px;
+}
+.blog-post-date p {
+  font-size: 12px;
 }
 
-.blog-view-title h2{
+.blog-view-title h2 {
   font-size: 32px;
   font-weight: 700;
 }
 
-.blog-view-content p{
+.blog-view-content p {
   font-size: 16px;
   font-weight: 500;
 }
-
-
-
-
 
 @media screen and (max-width: 980px) {
   .main-blog-view {
@@ -82,5 +81,48 @@
   .blog-view-left {
     margin-right: 0%;
     padding: 100px 80px 30px 80px;
+  }
+  .blog-view-title h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog-view-left {
+    padding: 94px 40px;
+  }
+  .blog-author-img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blog-view-left {
+    padding: 94px 20px;
+  }
+  .blog-view-title h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog-view-left {
+    padding: 94px 12px;
+  }
+  .blog-author-img {
+    width: 26px;
+    height: 26px;
+  }
+  .blog-author-name {
+    padding: 10px 0 0 10px;
+    font-size: 12px;
+  }
+  .blog-post-date p {
+    font-size: 10px;
+  }
+
+  .blog-view-title h2 {
+    font-size: 22px;
   }
 }
