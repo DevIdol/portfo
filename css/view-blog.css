@@ -1,0 +1,38 @@
+.main-blog-view {
+  display: flex;
+  width: 100%;
+}
+
+.blog-view-right {
+  height: 100%;
+  width: 35%;
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  overflow-x: hidden;
+  padding: 20px 10px 0 20px;
+  border-left: 1px solid #c0c0c0;
+  
+}
+
+.blog-view-left {
+  margin-right: 35%;
+  padding: 100px 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .main-blog-view {
+    flex-wrap: wrap;
+  }
+  .blog-view-right {
+    position: unset;
+    width: 100%;
+    padding: 30px 100px;
+    border-bottom: none;
+    border-top: 1px solid #c0c0c0;
+  }
+  .blog-view-left {
+    margin-right: 0%;
+    padding:100px 80px 30px 80px;
+  }
+}
