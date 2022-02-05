@@ -25,7 +25,7 @@ $(document).ready(function () {
         transition: 'ease-in-out 0.6s;',
         'box-shadow': '0 1px 1px -1px gray',
       })
-      $('.logo-name, .nav-list ul li a, .sign-in a, .sign-out a').css({
+      $('#main-nav .logo-name, .nav-list ul li a, .sign-in a, .sign-out a').css({
         color: '#000',
       })
     } else {
@@ -34,7 +34,7 @@ $(document).ready(function () {
         transition: 'ease-in 0.4s',
         'box-shadow': 'none',
       })
-      $('.logog-name, .nav-list ul li a, .sign-in a, .sign-out a').css({
+      $('#main-nav .logo-name, .nav-list ul li a, .sign-in a, .sign-out a').css({
         color: '#fff',
       })
     }

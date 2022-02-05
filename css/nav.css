@@ -145,6 +145,7 @@
   font-size: 18px;
   padding-left: 40%;
   font-weight: 500;
+  text-transform: uppercase;
   transition: all 0.4s;
 }
 #mobile-nav ul li a:hover {
