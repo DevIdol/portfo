@@ -22,13 +22,20 @@ $(document).ready(function () {
     if ($(window).scrollTop() > 0) {
       $('#main-nav, #mobile-nav').css({
         'background-color': '#fff',
-        transition: 'ease-in-out 0.8s;',
+        transition: 'ease-in-out 0.6s;',
         'box-shadow': '0 1px 1px -1px gray',
+      })
+      $('.logo-name, .nav-list ul li a, .sign-in a, .sign-out a').css({
+        color: '#000',
       })
     } else {
       $('#main-nav, #mobile-nav').css({
-        'background-color': 'rgba(255, 255, 255, 0.4)',
-        transition: 'ease-in 0.8s;',
+        'background-color': 'transparent',
+        transition: 'ease-in 0.4s',
+        'box-shadow': 'none',
+      })
+      $('.logog-name, .nav-list ul li a, .sign-in a, .sign-out a').css({
+        color: '#fff',
       })
     }
   })
@@ -63,7 +70,7 @@ $(document).ready(function () {
   })
 
   // animate on scroll
-$(function () {
-  new WOW().init();
-});
+  $(function () {
+    new WOW().init()
+  })
 })
