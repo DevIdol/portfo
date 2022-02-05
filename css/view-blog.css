@@ -74,7 +74,7 @@
   .blog-view-right {
     position: unset;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 80px;
     border-bottom: none;
     border-top: 1px solid #c0c0c0;
   }
@@ -88,8 +88,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .blog-view-right {
+    padding: 30px 40px;
+  }
   .blog-view-left {
     padding: 94px 40px;
+  }
+  .view-blog-img {
+    height: 260px;
   }
   .blog-author-img {
     width: 28px;
@@ -98,8 +104,14 @@
 }
 
 @media screen and (max-width: 500px) {
+  .blog-view-right {
+    padding: 30px 20px;
+  }
   .blog-view-left {
     padding: 94px 20px;
+  }
+  .view-blog-img {
+    height: 240px;
   }
   .blog-view-title h2 {
     font-size: 24px;
@@ -107,8 +119,14 @@
 }
 
 @media screen and (max-width: 400px) {
+  .blog-view-right {
+    padding: 30px 12px;
+  }
   .blog-view-left {
     padding: 94px 12px;
+  }
+  .view-blog-img {
+    height: 200px;
   }
   .blog-author-img {
     width: 26px;
