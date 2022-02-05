@@ -7,10 +7,15 @@ $(window).on('load', function () {
   $('#arrow-down i').addClass('animation fadeInDown infinite')
 })
 
-$('.navigation ul li a, #mobile-nav .navigation ul li a, .username li a').on('click', function () {
-  $('.navigation ul li a, #mobile-nav .navigation ul li a, .username li a').removeClass('active')
-  $(this).addClass('active')
-})
+$('.navigation ul li a, #mobile-nav .navigation ul li a, .username li a').on(
+  'click',
+  function () {
+    $(
+      '.navigation ul li a, #mobile-nav .navigation ul li a, .username li a',
+    ).removeClass('active')
+    $(this).addClass('active')
+  },
+)
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -37,5 +42,23 @@ $(document).ready(function () {
       .addClass('active-resume')
       .siblings()
       .removeClass('active-resume')
+  })
+
+  // Smooth Scrolling
+  $(function () {
+    $('a.smooth-scroll').click(function (event) {
+      event.preventDefault()
+
+      // get section id like #about, #servcies, #work, #team and etc.
+      var section_id = $(this).attr('href')
+
+      $('html, body').animate(
+        {
+          scrollTop: $(section_id).offset().top - 80,
+        },
+        100,
+        'easeInOutExpo',
+      )
+    })
   })
 })

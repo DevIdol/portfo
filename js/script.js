@@ -8,7 +8,7 @@ function navHighlighter() {
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight
     const sectionTop =
-      current.getBoundingClientRect().top + window.pageYOffset - 50
+      current.getBoundingClientRect().top + window.pageYOffset - 90
     const sectionId = current.getAttribute('id')
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
