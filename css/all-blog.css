@@ -1,0 +1,29 @@
+.main-nav{
+    background-color: #808080 !important;
+}
+
+.blog-section{
+    flex-wrap: wrap;
+}
+.blog-search{
+    padding-bottom: 20px;
+}
+.search-box{
+    box-shadow: none;
+    border: 1px solid #808080;
+}
+.search-box:focus{
+    box-shadow: none;
+    border: 1px solid #808080;
+}
+.search-btn{
+    color: #8f1f13;
+    border: 1px solid #8f1f13;
+    transition: ease-in-out 0.4s;
+}
+.search-btn:hover{
+    background-color: #8f1f13;
+    color: #fff;
+    font-weight: 600;
+    transition: ease-in 0.4s;
+}
