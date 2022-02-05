@@ -61,4 +61,9 @@ $(document).ready(function () {
       )
     })
   })
+
+  // animate on scroll
+$(function () {
+  new WOW().init();
+});
 })
