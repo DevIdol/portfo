@@ -6,6 +6,9 @@
   display: flex;
   width: 100%;
 }
+.blog-search{
+  padding-bottom: 20px;
+}
 
 .blog-view-right {
   height: 100%;
@@ -38,7 +41,6 @@
 .blog-view-right-title{
   font-size: 26px;
   font-weight: 700;
-  padding: 20px 0;
 }
 .blog-view-right-body{
   margin-bottom: 20px;
