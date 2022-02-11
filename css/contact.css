@@ -30,6 +30,9 @@ textarea:focus {
   color: #8f1f13;
   transition: all 0.6s;
 }
+.send-mail-btn:focus{
+  box-shadow: none;
+}
 .mail-btn{
     padding-top: 20px;
 }
