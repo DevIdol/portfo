@@ -21,7 +21,23 @@
   margin-bottom: 126px;
   overflow-y: scroll;
 }
-
+.main-view-right-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.main-view-right-header a h6{
+  color: #8f1f13;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: ease-in 0.4s;
+}
+.main-view-right-header a h6:hover{
+  font-weight: 700;
+  transition: ease-in-out 0.4s;
+}
 .search-box{
   box-shadow: none;
   border: 1px solid #808080;
@@ -147,6 +163,8 @@
     border-bottom: none;
     border-top: 1px solid #c0c0c0;
     margin-bottom: 0;
+    margin: 0 8%;
+    overflow-y: unset;
   }
   .blog-view-left {
     margin-right: 0%;
@@ -156,10 +174,16 @@
     font-size: 30px;
   }
 }
-
+@media screen and (max-width: 800px) {
+  .blog-view-right {
+    padding: 30px 40px;
+    margin: 0 4%;
+  }
+}
 @media screen and (max-width: 600px) {
   .blog-view-right {
     padding: 30px 40px;
+    margin: 0%;
   }
   .blog-view-left {
     padding: 100px 40px 30px 40px;
@@ -191,6 +215,9 @@
 @media screen and (max-width: 400px) {
   .blog-view-right {
     padding: 30px 12px;
+  }
+  .main-view-right-header a h6{
+    font-size: 12px;
   }
   .blog-view-left {
     padding: 100px 10px 30px 10px;
