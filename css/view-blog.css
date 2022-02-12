@@ -6,8 +6,9 @@
   display: flex;
   width: 100%;
 }
-.blog-search{
+.blog-search {
   padding-bottom: 20px;
+  margin: 0px 10px;
 }
 
 .blog-view-right {
@@ -21,86 +22,89 @@
   margin-bottom: 126px;
   overflow-y: scroll;
 }
-.main-view-right-header{
+.main-view-right-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0;
 }
-.main-view-right-header a h6{
+.main-view-right-header a h6 {
   color: #8f1f13;
   font-size: 14px;
   font-weight: 500;
   text-decoration: underline;
   transition: ease-in 0.4s;
 }
-.main-view-right-header a h6:hover{
+.main-view-right-header a h6:hover {
   font-weight: 700;
   transition: ease-in-out 0.4s;
 }
-.search-box{
+.search-box {
   box-shadow: none;
   border: 1px solid #808080;
 }
-.search-box:focus{
+.search-box:focus {
   box-shadow: none;
   border: 1px solid #808080;
 }
-.search-btn{
+.search-btn {
   color: #8f1f13;
   border: 1px solid #8f1f13;
   transition: ease-in-out 0.4s;
 }
-.search-btn:hover{
+.search-btn:hover {
   background-color: #8f1f13;
   color: #fff;
   font-weight: 600;
   transition: ease-in 0.4s;
 }
-.blog-view-right-title{
+.blog-view-right-title {
   font-size: 26px;
   font-weight: 700;
 }
-.blog-view-right-body{
+.blog-view-right-body {
   margin-bottom: 20px;
+  padding: 0px 10px;
 }
 
-.right-blog-post-img a img{
+.right-blog-post-img a img {
   width: 100px;
   height: 100%;
 }
-.right-blog-post-divider{
+.right-blog-post-divider {
   width: 3px;
   height: 20px;
   background-color: #8f1f13;
   margin-right: 4px;
 }
-.right-blog-post-type{
+.right-blog-post-type {
   display: flex;
 }
-.right-blog-post-type-name{
+.right-blog-post-type-name {
   font-size: 12px;
   font-weight: 500;
   color: #000;
 }
-.right-blog-post-subtitle{
+.right-blog-post-subtitle {
   display: flex;
   justify-content: space-between;
 }
-.post-date{
+.post-date {
   font-size: 10px;
 }
-.blog-view-right-blog-post{
+.blog-view-right-blog-post {
   display: flex;
   padding: 8px;
   border: 1px solid silver;
   border-radius: 4px;
 }
-.right-blog-post-content{
+.right-blog-post-content {
+  padding: 4px 0px;
   padding-left: 12px;
 }
-.right-blog-post-content h4{
+.right-blog-post-content h4 {
   font-size: 20px;
+  padding: 6px 0px;
 }
 /* 
 ===================================
@@ -201,6 +205,9 @@
   .blog-view-right {
     padding: 30px 20px;
   }
+  .blog-view-right-body {
+    padding: 0px;
+  }
   .blog-view-left {
     padding: 100px 20px 30px 20px;
   }
@@ -216,7 +223,7 @@
   .blog-view-right {
     padding: 30px 12px;
   }
-  .main-view-right-header a h6{
+  .main-view-right-header a h6 {
     font-size: 12px;
   }
   .blog-view-left {
