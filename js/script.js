@@ -32,7 +32,7 @@ function navHighlighter() {
 const backTop = document.querySelector('.back-top')
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 200) {
+  if (window.pageYOffset > 150) {
     backTop.classList.add('back-active')
   } else {
     backTop.classList.remove('back-active')
