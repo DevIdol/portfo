@@ -52,11 +52,12 @@
   border: 1px solid #8f1f13;
   transition: ease-in-out 0.4s;
 }
-.search-btn:hover {
+.search-btn:hover , .search-btn:focus {
   background-color: #8f1f13;
   color: #fff;
   font-weight: 600;
   transition: ease-in 0.4s;
+  box-shadow: none;
 }
 .blog-view-right-title {
   font-size: 26px;
