@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 1;
+  z-index: 999;
   
 }
 
@@ -118,7 +118,7 @@
 #mobile-nav {
   display: none;
   line-height: 64px;
-  z-index: 1;
+  z-index: 999;
 }
 #mobile-nav .logo-name{
   color: #000;
