@@ -64,7 +64,6 @@
 }
 .blog-view-right-body {
   margin-bottom: 20px;
-  padding: 0px 10px;
 }
 
 .right-blog-post-img a img {
@@ -204,9 +203,6 @@
 @media screen and (max-width: 500px) {
   .blog-view-right {
     padding: 30px 20px;
-  }
-  .blog-view-right-body {
-    padding: 0px;
   }
   .blog-view-left {
     padding: 100px 20px 30px 20px;
