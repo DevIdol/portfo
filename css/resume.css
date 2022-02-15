@@ -54,9 +54,20 @@
 .resume-left h3 {
   font-size: 14px;
   text-align: center;
+}
+.my-social-media {
   padding-bottom: 20px;
 }
-
+.my-social-media a {
+ padding: 0 10px;
+}
+.my-social-media a i{
+  font-size: 24px;
+  color: #8f1f13;
+}
+.my-social-media a .instagram{
+  padding-right: 8px;
+}
 /* 
 ========================================
       Resume Right Side
