@@ -127,10 +127,16 @@ li {
 .interface-body {
   background: #253047;
 }
-.dashboard-title{
+.dashboard-title h2{
   color: #fff;
   font-weight: 600;
   font-size: 28px;
+}
+
+.interface-body p{
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 980px) {
@@ -195,3 +201,6 @@ li {
     width: 200px;
   }
 }
+
+
+

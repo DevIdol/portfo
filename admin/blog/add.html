@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Add Blog</title>
 
     <!-- ==== Bootstrap CSS ===== -->
     <link
@@ -35,154 +35,6 @@
   </head>
   <body>
     <section id="admin-menu">
-      <div class="admin-logo">
-        <img src="../img/devidol.png" alt="" />
-        <h2>DevIdol</h2>
-      </div>
-      <div class="admin-items">
-        <li class="nav-item menu-items">
-          <a href="admin.html" class="nav-link">
-            <span class="menu-icon">
-              <i class="fas fa-dashboard"></i>
-            </span>
-            <span class="menu-title">Dashboard</span>
-          </a>
-        </li>
-        <!-- ========= Users ========= -->
-        <li class="nav-item menu-items" id="one">
-          <a
-            class="nav-link"
-            data-bs-toggle="collapse"
-            href="#users"
-            aria-expanded="false"
-            aria-controls="users"
-          >
-            <span class="menu-icon">
-              <i class="fas fa-users"></i>
-            </span>
-            <span class="menu-title">Users</span>
-            <i class="fas fa-chevron-down users"></i>
-          </a>
-          <div class="collapse" id="users">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item">
-                <a class="nav-link" href="user/add.html">Add</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="user/edit.html">Edit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="user/list.html">
-                  List
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <!-- ========= Blogs ========= -->
-        <li class="nav-item menu-items" id="two">
-          <a
-            class="nav-link"
-            data-bs-toggle="collapse"
-            href="#blogs"
-            aria-expanded="false"
-            aria-controls="blogs"
-          >
-            <span class="menu-icon">
-              <i class="fas fa-blog"></i>
-            </span>
-            <span class="menu-title">Blogs</span>
-            <i class="fas fa-chevron-down blogs"></i>
-          </a>
-          <div class="collapse" id="blogs">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item">
-                <a class="nav-link" href="blog/add.html">Add</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog/edit.html">Edit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog/list.html">
-                  List
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <!-- ========== Resume ========= -->
-        <li class="nav-item menu-items" id="three">
-          <a
-            class="nav-link"
-            data-bs-toggle="collapse"
-            href="#resume"
-            aria-expanded="false"
-            aria-controls="resume"
-          >
-            <span class="menu-icon">
-              <i class="fas fa-address-card"></i>
-            </span>
-            <span class="menu-title">Resume</span>
-            <i class="fas fa-chevron-down resume"></i>
-          </a>
-          <div class="collapse" id="resume">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item">
-                <a class="nav-link" href="resume/add.html">Add</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resume/edit.html">Edit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resume/list.html">
-                  List
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <!-- ======== CU LIBRARY ======== -->
-        <li class="nav-item menu-items" id="four">
-          <a
-            class="nav-link"
-            data-bs-toggle="collapse"
-            href="#culib"
-            aria-expanded="false"
-            aria-controls="culib"
-          >
-            <span class="menu-icon">
-              <i class="fa-brands fa-android"></i>
-            </span>
-            <span class="menu-title">CU Library</span>
-            <i class="fas fa-chevron-down culib"></i>
-          </a>
-          <div class="collapse" id="culib">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item">
-                <a class="nav-link" href="culibrary/add.html">Add</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="culibrary/edit.html">Edit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="culibrary/list.html">
-                  List
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <!-- ========== Contact ======== -->
-        <li class="nav-item menu-items">
-          <a href="contact.html" class="nav-link">
-            <span class="menu-icon">
-              <i class="fas fa-message"></i>
-            </span>
-            <span class="menu-title">Contact</span>
-          </a>
-        </li>
-      </div>
-    </section> <section id="admin-menu">
       <div class="admin-logo">
         <img src="../img/devidol.png" alt="" />
         <h2>DevIdol</h2>
@@ -353,7 +205,7 @@
         </li>
         <!-- ========== Contact ======== -->
         <li class="nav-item menu-items">
-          <a href="../contact.html" class="nav-link">
+          <a href="#" class="nav-link">
             <span class="menu-icon">
               <i class="fas fa-message"></i>
             </span>
@@ -362,27 +214,29 @@
         </li>
       </div>
     </section>
+
     <section id="admin-interface">
       <div class="navigation sticky-top">
         <div class="n1">
           <div>
             <i id="admin-menu-btn" class="fas fa-bars"></i>
           </div>
+          <div class="interface-header-search ms-1">
+            <form class="d-flex">
+              <input
+                class="form-control input-search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn search-btn" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
 
         <div class="n2">
-          <!-- <form
-          class="d-flex blog-search wow slideInRight"
-          data-wow-duration="2s"
-        >
-          <input
-            class="form-control search-box"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn search-btn" type="submit">Search</button>
-        </form> -->
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -415,51 +269,47 @@
         </div>
       </div>
       <div>
-        <h1>
-          Add Blog
+        <div class="interface-body">
+          <div class="dashboard-title">
+            <h2>Add Blog</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            itaque quasi, quod et eligendi tempora omnis labore molestias,
+            dolorum magnam, a ipsum iusto. Delectus magnam officia eius,
+            provident minima dicta!
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <!-- ====== Interface Header ======== -->
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </h1>
+      
       </div>
     </section>
 
