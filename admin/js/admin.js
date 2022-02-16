@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('#one-01').on('click', function () {
-    $('.culib').toggleClass('fa-chevron-up')
+    $('.homes').toggleClass('fa-chevron-up')
   })
   $('#one').on('click', function () {
     $('.users', this).toggleClass('fa-chevron-up')
