@@ -6,13 +6,15 @@
 
 body,
 html {
-  width: 100%;
   background: #fff;
-  position: relative;
   height: 100%;
+  position: relative;
+  display: flex;
 }
 #admin-menu {
   position: fixed;
+  top: 0;
+  left: 0;
   overflow-y: scroll;
   background: #111827;
   width: 260px;
@@ -41,7 +43,7 @@ html {
   color: #868d97;
   padding: 18px 0 18px 20px;
 }
-.nav-link{
+.nav-link {
   color: #868d97;
 }
 .admin-items li a span i {
@@ -71,10 +73,11 @@ li {
 /* ============ Nav Bar ========== */
 
 #admin-interface {
+  width: calc(100% - 260px);
   margin-left: 260px;
+  position: relative;
 }
 .navigation {
-  width: 100%;
   background: #111827;
   display: flex;
   justify-content: space-between;
@@ -87,6 +90,30 @@ li {
   justify-content: flex-start;
   align-items: center;
 }
+.interface-header-search{
+  width: 400px;
+}
+.input-search {
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+.input-search:focus {
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+.search-btn {
+  box-shadow: none;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #8f1f13;
+  border: 1px solid #8f1f13;
+  box-shadow: none;
+  color: #fff;
+}
 
 #admin-menu-btn {
   display: none;
@@ -95,56 +122,44 @@ li {
   cursor: pointer;
   margin-right: 20px;
 }
-.blog-search {
-  padding: 0px 20px;
+
+/* ====== interface body ====== */
+.interface-body {
+  background: #253047;
 }
-.search-box {
-  box-shadow: none;
-  border: 1px solid #808080;
-}
-.search-box:focus {
-  box-shadow: none;
-  border: 1px solid #808080;
-}
-.search-btn {
-  color: #fff;
-  border: 1px solid #fff;
-  transition: 0.4s ease;
-}
-.search-btn:hover,
-.search-btn:focus {
-  background-color: #8f1f13;
+.dashboard-title{
   color: #fff;
   font-weight: 600;
-  box-shadow: none;
-  transition: ease-in 0.4s;
+  font-size: 28px;
 }
 
 @media screen and (max-width: 980px) {
-  #admin-menu-btn {
-    display: initial;
-  }
+ 
   #admin-menu {
     width: 240px;
     position: fixed;
     left: -240px;
     transition: 0.4s ease;
   }
-  #admin-menu.actived {
+  #admin-menu.actived{
     left: 0px;
   }
-  #admin-interface {
+  #admin-menu-btn {
+    display: initial;
+  }
+  #admin-menu.actived~ #admin-interface{
+    width: calc(100% - 240px);
+    margin-left: 240px;
+    transition: 0.4s ease;
+
+  }
+  #admin-interface{
     width: 100%;
     margin-left: 0px;
     display: inline-block;
     transition: 0.4s ease;
   }
-  #admin-menu.actived ~ #admin-interface {
-    width: calc(100% - 240px);
-    margin-left: 240px;
-    transition: 0.4s ease;
-  }
-  #admin-interface .navigation {
+  #admin-interface .navigation{
     width: 100%;
   }
 }
@@ -156,6 +171,9 @@ li {
   .admin-items li a {
     padding: 16px 0 16px 10px;
   }
+  .interface-header-search{
+    width: 300px;
+  }
 }
 @media screen and (max-width: 600px) {
   #admin-menu {
@@ -166,5 +184,14 @@ li {
   #admin-menu.actived ~ #admin-interface {
     width: calc(100% - 220px);
     margin-left: 220px;
+  }
+  .interface-header-search{
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .interface-header-search{
+    width: 200px;
   }
 }

@@ -15,7 +15,11 @@ $(document).ready(function () {
     $('.culib').toggleClass('fa-chevron-up')
   })
 
-  $("#admin-menu-btn").click(function(){
-    $("#admin-menu").toggleClass("actived");
+  $('#admin-menu-btn').click(function () {
+    $('#admin-menu').toggleClass('actived')
   })
+
+  // $('#admin-menu-btn').on('click', function () {
+  //   $('#search-btn').toggleClass('actived')
+  // })
 })
