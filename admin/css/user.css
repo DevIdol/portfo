@@ -1,0 +1,15 @@
+.interface-body {
+  overflow-x: auto;
+}
+.user-profile-img {
+  width: 30px;
+  border-radius: 50%;
+}
+table{
+    text-align: center;
+}
+
+.edit-btn:focus, .delete-btn:focus{
+    box-shadow: none !important;
+    border: none !important;
+}

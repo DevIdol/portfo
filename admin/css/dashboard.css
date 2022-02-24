@@ -36,6 +36,7 @@
   text-decoration: underline;
   color: #868d97;
 }
+
 .home-section {
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +44,7 @@
   align-items: center;
   margin: 20px;
 }
+
 
 .home-background img {
   display: flex;
@@ -73,7 +75,7 @@
 }
 .home-content input {
   box-shadow: none;
-  width: 100%;
+  width: 300px;
 }
 .home-content input:focus {
   box-shadow: none;
@@ -87,6 +89,7 @@
   border: 1px solid #868d97;
   border-radius: 6px;
   margin-left: 20px;
+  text-align: center;
 }
 
 .submit-btn:hover {
