@@ -1,3 +1,41 @@
+/* ======== Create User ============ */
+.profile-img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.profile-img h3{
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+}
+.profile-img img {
+  width: 200px;
+  border: 1px solid #868d97;
+  padding: 2px;
+  border-radius: 2px;
+}
+#user-input-form{
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .interface-body {
   overflow-x: auto;
 }
@@ -5,11 +43,12 @@
   width: 30px;
   border-radius: 50%;
 }
-table{
-    text-align: center;
+table {
+  text-align: center;
 }
 
-.edit-btn:focus, .delete-btn:focus{
-    box-shadow: none !important;
-    border: none !important;
+.edit-btn:focus,
+.delete-btn:focus {
+  box-shadow: none !important;
+  border: none !important;
 }

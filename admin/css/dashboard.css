@@ -1,5 +1,5 @@
 .values {
-  padding: 30px 30px 0 30px;
+  padding: 0px 30px 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,6 @@
   align-items: center;
   margin: 20px;
 }
-
 
 .home-background img {
   display: flex;
@@ -110,7 +109,7 @@
 }
 @media (max-width: 980px) {
   .values {
-    padding: 30px 30px 0 30px;
+    padding: 0px 30px 0 30px;
     justify-content: flex-start;
   }
   .values .val-box {
@@ -132,16 +131,14 @@
   }
 }
 @media (max-width: 480px) {
-
- .val-box i{
-   padding: 15px 15px 0 15px;
-
- }
- .values{
-   padding: 15px 15px 0 15px;
- }
- .values .val-box{
-   width: 100%;
-   margin: 8px 0;
- }
+  .val-box i {
+    padding: 15px 15px 0 15px;
+  }
+  .values {
+    padding: 0px 15px 0 15px;
+  }
+  .values .val-box {
+    width: 100%;
+    margin: 8px 0;
+  }
 }
