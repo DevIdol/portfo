@@ -51,6 +51,10 @@ $(document).ready(function () {
       .removeClass('active-resume')
   })
 
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  })
+
   // Smooth Scrolling
   $(function () {
     $('a.smooth-scroll').click(function (event) {
