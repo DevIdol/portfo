@@ -29,6 +29,15 @@ function navHighlighter() {
   })
 }
 
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+  l.addEventListener('click', () => {
+    bsCollapse.toggle()
+  })
+})
+
 const backTop = document.querySelector('.back-top')
 
 window.addEventListener('scroll', () => {
@@ -38,8 +47,6 @@ window.addEventListener('scroll', () => {
     backTop.classList.remove('back-active')
   }
 })
-
-
 
 var date = new Date()
 var getyear = date.getFullYear()
