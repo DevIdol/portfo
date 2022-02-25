@@ -20,7 +20,7 @@
   overflow-x: hidden;
   padding: 20px 10px 0px 30px;
   margin-bottom: 126px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .main-view-right-header {
   display: flex;
@@ -215,6 +215,8 @@
     font-size: 24px;
   }
 }
+
+
 
 @media screen and (max-width: 400px) {
   .blog-view-right {
